@@ -1,0 +1,68 @@
+--- 
+- 
+  description: "Accessory gallerie"
+  id: accessory
+  imagefolder: /img/ac_slides
+  images: 
+    - 
+      name: ac0.jpg
+    - 
+      name: ac1.jpg
+    - 
+      name: ac2.jpg
+    - 
+      name: ac3.jpg
+    - 
+      name: ac4.jpg
+    - 
+      name: ac5.jpg
+    - 
+      name: ac6.jpg
+    - 
+      name: ac7.jpg
+    - 
+      name: ac8.jpg
+
+- 
+  description: "Food gallerie"
+  id: food
+  imagefolder: /img/food_slides
+  images: 
+    - 
+      name: f0.jpg
+    - 
+      name: f1.jpg
+    - 
+      name: f2.jpg
+    - 
+      name: f3.jpg
+    - 
+      name: f4.jpg
+    - 
+      name: f5.jpg
+    - 
+      name: f6.jpg
+    - 
+      name: f7.jpg
+    - 
+      name: f8.jpg
+    - 
+      name: f9.jpg
+    - 
+      name: f10.jpg
+    - 
+      name: f11.jpg
+    - 
+      name: f12.jpg
+    - 
+      name: f13.jpg
+    - 
+      name: f14.jpg
+    - 
+      name: f15.jpg
+    - 
+      name: f16.jpg
+    - 
+      name: f17.jpg
+    - 
+      name: f18.jpg

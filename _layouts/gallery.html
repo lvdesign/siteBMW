@@ -1,0 +1,36 @@
+{% include header.html %}
+
+
+
+
+<section class="main" role="main">
+<article class="gallery">
+
+
+<div class="slider slider-for">
+{% for gallery in site.data.gallery %}
+    {% if gallery.id == page.galleryid %}
+        {% for image in gallery.images %}
+    <div><figure><img src="{{ site.baseurl }}{{ gallery.imagefolder }}/{{ image.name }}" alt="legende"  class="innerShadow"/></figure></div>
+        {% endfor %}
+  {% endif %}
+{% endfor %}
+
+</div>
+
+<div class="slider slider-nav">
+{% for gallery in site.data.gallery %}
+    {% if gallery.id == page.galleryid %}
+        {% for image in gallery.images %}
+    <div><figure><img src="{{ site.baseurl }}{{ gallery.imagefolder }}/{{ image.name }}" alt="legende"  class="innerShadow"/></figure></div>
+        {% endfor %}
+  {% endif %}
+{% endfor %}
+</div>
+
+
+
+</article>
+</section>
+
+{% include footer.html %}
