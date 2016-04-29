@@ -8,7 +8,7 @@ $(document).ready(function(){
         clientId: 'a26d284ad1224ceda0d9ce93447ce780',
         target: 'instafeed',
         get: 'tagged',
-        tagName: 'lvdesignfralibook',
+        tagName: 'LILYBURGER',
         links: true,
         limit: 1,
         sortBy: 'most-recent',
