@@ -16,13 +16,47 @@
         
         <script src="{{ "/js/vendor/modernizr-2.8.3.min.js" | prepend: site.baseurl }}"></script>
         <link rel="stylesheet" type="text/css" href="{{ "/js/vendor/slick/slick.css" | prepend: site.baseurl }}" />
-        <link rel="stylesheet" type="text/css" href="{{ "/js/vendor/slick/slick-theme.css" | prepend: site.baseurl }}" />     
+        <link rel="stylesheet" type="text/css" href="{{ "/js/vendor/slick/slick-theme.css" | prepend: site.baseurl }}" /> 
+        
+        <!-- lettering -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{"/js/vendor/jquery-1.12.0.min.js" | prepend: site.baseurl }}"><\/script>')</script>
+        
+        
+        <script src="{{"/js/jquery.lettering.js" | prepend: site.baseurl }}"></script>
+        
+        <script>
+         $(document).ready(function(){
+         	
+         	$("#loader h1").lettering();
+         	
+         	$("#loader h1 span").each(function() {  //1001
+         	$(this)
+         	.css({ top: -(Math.floor(Math.random()*1000)+150), left: Math.floor(Math.random()*1001)-500,  }); 
+         	});
+         	
+         	setTimeout(function() {$('html').addClass("step-one");}, 1000);
+         	
+         	setTimeout(function() {$('body').addClass('loaded');}, 6000);
+         });
+         </script>    
     
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+<div id="loader-wrapper">
+        <div id="loader">
+            
+            <h1>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</h1>
+           
+        </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div><!-- wrapp loader -->   
+
 
 
 <!--content-->

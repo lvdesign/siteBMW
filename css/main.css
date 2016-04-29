@@ -17,6 +17,8 @@ font-family: 'IM Fell English', serif;
 */
 @import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|IM+Fell+English);
 
+@import "letteringloader.css";
+
 html {
     color: #222;
     font-size: 1em;
