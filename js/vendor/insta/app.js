@@ -14,7 +14,7 @@ $(document).ready(function(){
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
         
-        template: '<div class="innerShadow" ><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a></div></div>'
+        template: '<div class="innerShadow"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a></div></div>'
    });
    userFeed.run();
     

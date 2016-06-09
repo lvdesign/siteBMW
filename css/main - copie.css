@@ -217,11 +217,9 @@ background:  url("../img/icon/favicon.jpg") no-repeat right center;}
 article.main{
 }
 
-/*images-Photos base*/
 figure img{
 max-width: 80%;
 padding: 4%;
-margin: 1em 0;
 }
 
 /*Fancy
@@ -241,6 +239,13 @@ box-shadow:        11px 16px 6px #ccc;
 /****Slider plugin slick*/
 
 article.gallery{}
+
+.slider-for figure{  padding-bottom: 2em;}
+    .slider-for figure img { text-align: center; margin: 0 auto;}
+
+.slider-nav figure{ max-width: 65%; padding-bottom: 1em; }
+    .slider-nav figure img{text-align: center; margin: 0 auto; }
+
 
 
 
@@ -279,11 +284,13 @@ h3 span{    display: block;    text-transform: none;}
 	    text-decoration: underline;background-color: white;
 	}
 	
-	figure img{
-	max-width: 100%;
-	margin: 2em 0;
+	/*slider*/
+	section.main{
+	    max-width: 55%;
+	     margin: 0 auto ;
+	    text-align: center;
 	}
-		
+	
 	
 	 
 }/*end45*/
@@ -291,8 +298,11 @@ h3 span{    display: block;    text-transform: none;}
 /* desktop */	
 @media (min-width: 70em){
 
-figure img{
-margin: 4em 0;
+/*slider*/
+section.main{
+    max-width: 45%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
