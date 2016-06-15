@@ -11,31 +11,6 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-        
-        <link rel="stylesheet" href="{{ "/js/vendor/carousel/styleNew.css" | prepend: site.baseurl }}" />
-        <link rel="stylesheet" href="{{ "/js/vendor/carousel/elastislide.css" | prepend: site.baseurl }}" />
-        
-        <noscript>
-        	<style>
-        		.es-carousel ul{
-        			display:block;
-        		}
-        	</style>
-        </noscript>
-        <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
-        	<div class="rg-image-wrapper toto">
-        		
-        		<div class="rg-image"></div>
-        		<div class="rg-loading"></div>
-        		<div class="rg-caption-wrapper">
-        			<div class="rg-caption" style="display:none;">
-        				<p></p>
-        			</div>
-        		</div>
-        	</div>
-        </script>
-        
-        
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
         
