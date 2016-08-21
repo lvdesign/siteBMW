@@ -130,6 +130,19 @@ margin-bottom: 2%;
 text-align: center;
 }
 
+/*home*/
+figure{
+    margin: 0;
+    padding: 0;
+}
+.thumb img{
+    width: 280px;
+    height: 280px;
+    margin-bottom: 5%;
+    padding: 4%;
+    background-color: white;
+}
+
 /*navigation responsive*/
 #nav{ position: relative;
 margin-top: 2em;
@@ -245,6 +258,14 @@ h3 span{display: block;    text-transform: none;}
 	}
 	#nav a:hover{
 	    text-decoration: underline;background-color: white;
+	}
+	/*home*/
+	.thumb img{
+	    width: 500px;
+	    height: 500px;
+	    margin-bottom: 5%;
+	    padding: 2%;
+	    background-color: white;
 	}
 	
 	/*slideshow carousel -> js action*/
