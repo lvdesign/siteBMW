@@ -1,40 +1,20 @@
 {% include header.html %}
 
-
-
-
-
 <section class="main" role="main">
-<article class="gallery">
+<article>
 
-<div id="rg-gallery" class="rg-gallery">
-	<div class="rg-thumbs">
-		<!-- Elastislide Carousel Thumbnail Viewer -->
-		<div class="es-carousel-wrapper">
-			<div class="es-nav">
-				<span class="es-nav-prev">Previous</span>
-				<span class="es-nav-next">Next</span>
-			</div>
-			
-			<div class="es-carousel">
-				<ul>
+    <div class="toto noCarousel">
+				<ul id="thumb-carousel">
 				{% for gallery in site.data.gallery %}
 				    {% if gallery.id == page.galleryid %}
 				        {% for image in gallery.images %}
-					<li><a href="#"><img src="{{ site.baseurl }}{{ gallery.imagefolder }}/{{ image.name }}" data-large="{{ site.baseurl }}{{ gallery.imagefolder }}/{{ image.name }}" alt="image01" data-description="" /></a></li>	
+				        <li><img src="{{ site.baseurl }}{{ gallery.imagefolder }}/{{ image.name }}"  alt="{{ image.name }}" class="outdoorShadow"/></li>
+					
 					{% endfor %}
 					  {% endif %}
 					{% endfor %}				
 				</ul>
-			</div>
-			
-	    </div>
-						<!-- End Elastislide Carousel Thumbnail Viewer -->
-	</div><!-- rg-thumbs -->
-</div><!-- rg-gallery -->
-
-
-
+	</div><!-- End jCarousel -->
 </article>
 </section>
 

@@ -17,8 +17,6 @@ font-family: 'IM Fell English', serif;
 */
 @import url(https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|IM+Fell+English);
 
-@import "letteringloader.css";
-
 html {
     color: #222;
     font-size: 1em;
@@ -118,28 +116,24 @@ body{margin: 10px;}
 /*base*/
 .hide{text-indent: -999em;}
 img{ max-width: 100%;}
-
+ul, ol{list-style: none;}
 
 /*Link*/
 a, a:active, a:visited {color: #aaa;text-decoration: none;}
 a:hover{text-decoration: underline;}
 
-/*layout*/
+/*layout-base*/
 header[role="banner"], 
 article[role="main"], 
 footer[role="contentinfo"]{
 margin-bottom: 2%;
 text-align: center;
 }
-section[role="main"]{}
-
-footer[role="contentinfo"]{
-padding-top: 3%;
-}
-	
 
 /*navigation responsive*/
-#nav{ position: relative;}
+#nav{ position: relative;
+margin-top: 2em;
+}
 #nav nav{   
     position: relative; 
     width: 100%;
@@ -206,59 +200,33 @@ user-select: none;
 	
 #nav label:hover{
 background:  url("../img/icon/favicon.jpg") no-repeat right center;}
-	
-	#nav input[type=checkbox]:checked ~ nav {
+
+#nav input[type=checkbox]:checked ~ nav {
 	    height: auto;
 	    overflow: hidden;  
 	    	}
 	    	
 	    	
-/*section*/
-article.main{
-}
-
-/*images-Photos base*/
-figure img{
-max-width: 80%;
-padding: 4%;
-margin: 1em 0;
-}
-
-/*Fancy
--moz-box-shadow:    inset 0 0 10px #000000;
--webkit-box-shadow: inset 0 0 10px #000000;
-box-shadow:         inset 0 0 10px #000000;
-
+/*section
+si tablette ou desktop action avec jQuery css-> mainVertJcarousel
 */
-.innerShadow{
-border: 1px solid #eee;
--moz-box-shadow:    0 0 0px #000000;
--webkit-box-shadow: 0 0 10px #000000;
-box-shadow:        11px 16px 6px #ccc;
-}
-
-
-/****Slider plugin slick*/
-
-article.gallery{}
-
-
-
 /*footer*/
-.social, .infos{    list-style: none;}
-
+h3{font-weight: normal;}
+h3 span{display: block;    text-transform: none;}	
+    
     .social{    margin-top: 2%;}
         .social li{   width: 40px;    display: inline-block;}
             .social li a img{ max-width: 25px; padding:.5em; opacity: 1;}
             .social li a img:hover{ opacity: .5;}
-
     .infos li{   display: inline-block;    padding:0 .5em;   font-size: .8em;}
 
-h3{    font-weight: normal;}
-h3 span{    display: block;    text-transform: none;}	
 
 
-/* tablette */	
+
+
+/**********************
+ tablette 
+ */	
 @media (min-width: 45em){
 	   	
 #nav{padding: 0;     text-align: center;    border: none;   }
@@ -279,21 +247,23 @@ h3 span{    display: block;    text-transform: none;}
 	    text-decoration: underline;background-color: white;
 	}
 	
-	figure img{
-	max-width: 100%;
-	margin: 2em 0;
-	}
-		
+	/*slideshow carousel -> js action*/
 	
-	 
+	footer[role="contentinfo"]{
+	    clear: both;
+	}
+	
+	.social{
+	    margin-top: 0;
+	}
+	
 }/*end45*/
 
-/* desktop */	
+/******************
+ desktop 
+*/	
 @media (min-width: 70em){
 
-figure img{
-margin: 4em 0;
-}
 
 
 }

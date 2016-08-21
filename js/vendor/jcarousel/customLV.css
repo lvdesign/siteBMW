@@ -1,0 +1,60 @@
+/*the tango skin assumes that our images are 75 pixels wide by 75 pixels*/
+/*version mobile*/
+.noCarousel{
+    background: red;
+    
+}
+.noCarousel ul{
+    text-decoration: none;
+    list-style: none;
+}
+.noCarousel #thumb-carousel li img{
+    width: 180px;
+    height: 180px;
+    margin: 2%;
+    padding: 2%;
+    background-color: white;
+}
+
+/*version tablette desktop*/
+.jcarousel-container.jcarousel-container-vertical{
+display: inline;
+float: right;
+margin-right: 2%;
+ background-color: white;
+     
+}
+#thumb-carousel li img{
+    width: 75px;
+    height: 75px;
+}
+
+#stage-wrap{
+    position: relative;
+  overflow: hidden;
+   height: 600px;
+   border: 3px dotted #333;
+           }
+
+#stage{
+   width: 500px;
+    height: 500px;
+  
+   display: inline;
+   background-color: yellow;
+   
+}
+#stage img{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -300px;
+    padding: 2%;
+   
+}
+.noCarousel .outdoorShadow, .outdoorShadow{
+border: 1px solid #eee;
+-moz-box-shadow:    0 0 0px #000000;
+-webkit-box-shadow: 0 0 10px #000000;
+box-shadow:        11px 16px 6px #ccc;
+}
