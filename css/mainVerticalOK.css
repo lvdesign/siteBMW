@@ -218,7 +218,34 @@ background:  url("../img/icon/favicon.jpg") no-repeat right center;}
 	    height: auto;
 	    overflow: hidden;  
 	    	}
-	    	
+
+
+/*pages txt : clients, news*/
+article.infos{
+ width: 280px;
+    margin: 2% auto 2% auto;
+    padding: 2% 0;
+}
+h3#magazines,h3#advertising{
+    margin-top: 2%;
+    text-decoration: underline;
+}
+
+article.infos li{
+    font-size: .8em;
+    text-transform: none;
+    display: block;
+}	    	
+.inside{
+    background: #eee;
+    width: 260px;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+.inside img {
+    margin: 2% 0;
+    width: 80%;
+    }
 	    	
 /*section
 si tablette ou desktop action avec jQuery css-> mainVertJcarousel
@@ -227,7 +254,7 @@ si tablette ou desktop action avec jQuery css-> mainVertJcarousel
 h3{font-weight: normal;}
 h3 span{display: block;    text-transform: none;}	
     
-    .social{    margin-top: 2%;}
+    .social{margin-top: 2%;}
         .social li{   width: 40px;    display: inline-block;}
             .social li a img{ max-width: 25px; padding:.5em; opacity: 1;}
             .social li a img:hover{ opacity: .5;}
@@ -263,10 +290,21 @@ h3 span{display: block;    text-transform: none;}
 	.thumb img{
 	    width: 500px;
 	    height: 500px;
-	    margin-bottom: 5%;
+	    margin-bottom: 2%;
 	    padding: 2%;
 	    background-color: white;
 	}
+	/*pages txt : clients, news*/
+	article.infos{
+	width: 550px;
+	}
+	.inside{
+	 width: 500px;
+	   }
+	.inside img {
+	   
+	    width: 70%;
+	    }
 	
 	/*slideshow carousel -> js action*/
 	

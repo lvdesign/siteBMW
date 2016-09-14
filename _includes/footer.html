@@ -1,14 +1,15 @@
 <footer role="contentinfo">
-<h3>Bernhard Winkelmann<span class="">photographer</span></h3>
+<h3>Bernhard Winkelmann<span class="brand">photographer</span></h3>
 
 <ul class="social">
-    <li><a href="http://"><img src="img/social/instagram.png" alt="instagram" /></a></li>
-    <li><a href="http://"><img src="img/social/pinterest.png" alt="pinterest" /></a></li>
-    <li><a href="mailbox@"><img src="img/social/email.png" alt="contact mail" /></a></li>
+    <li><a href="#instagram"><img src="{{ "/img/social/instagram.png" | prepend: site.baseurl }}" alt="instagram" /></a></li>
+    <li><a href="http://"><img src="{{ "/img/social/google-plus.png" | prepend: site.baseurl }}" alt="google +" /></a></li>
+    <li><a href="#facebook"><img src="{{ "/img/social/facebook.png" | prepend: site.baseurl }}" alt="facebook" /></a></li>
+    <li><a href="#@"><img src="{{ "/img/social/email.png" | prepend: site.baseurl }}" alt="contact mail" /></a></li>
 </ul>
 <ul class="infos">
-    <li><a href="http://">Clients</a></li>
-     <li><a href="http://">News</a></li>
+    <li><a href="{{ site.baseurl }}/clients/">Clients</a></li>
+     <li><a href="{{ site.baseurl }}/news/">News</a></li>
 </ul>
 
 </footer>

@@ -7,8 +7,8 @@
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="{{ "/favicon.jpg" | prepend: site.baseurl }}">
+        <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.jpg" | prepend: site.baseurl }}">
 
         <link rel="stylesheet" href="{{ "/css/mainVerticalOK.css" | prepend: site.baseurl }}">
         
